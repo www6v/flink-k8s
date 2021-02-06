@@ -1,6 +1,6 @@
 
-kubectl port-forward -n flink service/flink-jobmanager 8081:8081
-Now it runs on localhost.
+kubectl port-forward -n flink service/flink-jobmanager 8081:8081.  
+Now it runs on localhost.   
 
 ---
 
