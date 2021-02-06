@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: grafana-core
@@ -8,10 +8,13 @@ metadata:
     component: core
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: grafana-core
   template:
     metadata:
       labels:
-        app: grafana
+        app: grafana-core
         component: core
     spec:
       containers:

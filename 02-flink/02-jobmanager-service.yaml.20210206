@@ -19,5 +19,5 @@ spec:
   - name: prom
     port: 9999
   selector:
-    app: flink-jobmanager
+    app: flink
     component: jobmanager

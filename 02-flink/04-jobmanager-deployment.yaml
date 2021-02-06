@@ -1,14 +1,17 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: flink-jobmanager
   namespace: flink
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: flink-jobmanager
   template:
     metadata:
       labels:
-        app: flink
+        app: flink-jobmanager
         component: jobmanager
     spec:
       containers:
