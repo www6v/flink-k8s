@@ -1,3 +1,9 @@
+
+kubectl port-forward -n flink service/flink-jobmanager 8081:8081
+Now it runs on localhost.
+
+---
+
 # Flink K8s setup with Prometheus service discovery
 This repository hosts manifests to configure a Kubernetes cluster with
 Flink monitored by Prometheus and Grafana using service discovery. Flink
